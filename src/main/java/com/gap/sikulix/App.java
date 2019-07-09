@@ -13,12 +13,12 @@ public class App
 	/*test case for Piano Tiles : http://www.pianotiles.org/*/
     public static void main( String[] args ) throws FindFailed, InterruptedException
     {
-		System.setProperty("webdriver.gecko.driver","geckodriver.exe");
-        driver = new FirefoxDriver();  
+		System.setProperty("webdriver.gecko.driver","geckodriver");
+        WebDriver driver = new FirefoxDriver();  
         driver.get("http://www.pianotiles.org/");
         
         //Type Selection
-    	new Screen().click("src/imgs/classic.png", 0);
+    	new Screen().doubleClick("src/imgs/classic.png", 0);
     	//Hide Message
     	new Screen().click("src/imgs/dontTouchMessage.png", 0);
     	
