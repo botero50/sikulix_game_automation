@@ -1,7 +1,7 @@
 package com.gap.sikulix;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Match;
 import org.sikuli.script.Region;
@@ -13,8 +13,8 @@ public class App
 	/*test case for Piano Tiles : http://www.pianotiles.org/*/
     public static void main( String[] args ) throws FindFailed, InterruptedException
     {
-		System.setProperty("webdriver.gecko.driver","geckodriver");
-        WebDriver driver = new FirefoxDriver();  
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+        WebDriver driver = new ChromeDriver();  
         driver.get("http://www.pianotiles.org/");
         
         //Type Selection
