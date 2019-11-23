@@ -1,7 +1,10 @@
-package com.gap.sikulix;
+package com.sikulix_game_automation;
+
+import java.io.File;
+import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Match;
 import org.sikuli.script.Region;
@@ -11,14 +14,18 @@ public class App
 {
 	static WebDriver driver;
 	/*test case for Piano Tiles : http://www.pianotiles.org/*/
-    public static void main( String[] args ) throws FindFailed, InterruptedException
+    public static void main( String[] args ) throws FindFailed, InterruptedException, IOException
     {
-		System.setProperty("webdriver.gecko.driver","geckodriver");
-        WebDriver driver = new FirefoxDriver();  
+    	String path = new File(".").getCanonicalPath();
+		System.setProperty("webdriver.chrome.driver","chromedriver");
+		WebDriver driver = new ChromeDriver();
         driver.get("http://www.pianotiles.org/");
         
+        
+        Thread.sleep(3000);
+        
         //Type Selection
-    	new Screen().doubleClick("src/imgs/classic.png", 0);
+    	new Screen().doubleClick(path + "/src/imgs/classic.png", 0);
     	//Hide Message
     	new Screen().click("src/imgs/dontTouchMessage.png", 0);
     	

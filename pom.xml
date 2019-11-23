@@ -4,37 +4,60 @@
 
   <groupId>com</groupId>
   <artifactId>gap.sikulix</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>gap.sikulix</name>
+  <name>com.sikulix_game_automation</name>
   <url>http://maven.apache.org</url>
+    
     
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-    
+  <repositories>
+	  <repository>
+		<id>com.sikulix</id>
+		<name>com.sikulix</name>
+		<url>https://oss.sonatype.org/content/groups/public</url>
+		<layout>default</layout>
+		<snapshots>
+		<enabled>true</enabled>
+		<updatePolicy>always</updatePolicy>
+		</snapshots>
+		</repository>
+	     </repositories>
   <dependencies>
+  
 	<dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.13-rc-1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.sikulix</groupId>
       <artifactId>sikulixapi</artifactId>
-      <version>1.1.0</version>
+      <version>2.0.0</version>
     </dependency>
     <dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-java</artifactId>
-		<version>4.0.0-alpha-2</version>
+		<version>4.0.0-alpha-3</version>
 	</dependency>
 	<dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-firefox-driver</artifactId>
-		<version>4.0.0-alpha-2</version>
+		<version>4.0.0-alpha-3</version>
+	</dependency>
+		<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-chrome-driver</artifactId>
+		<version>4.0.0-alpha-3</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.google.guava</groupId>
+	  <artifactId>guava</artifactId>
+	  <version>24.0-jre</version>
 	</dependency>
   </dependencies>
   

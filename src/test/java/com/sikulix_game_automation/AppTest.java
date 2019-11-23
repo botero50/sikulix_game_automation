@@ -1,4 +1,4 @@
-package com.gap.sikulix;
+package com.sikulix_game_automation;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
