@@ -13,7 +13,7 @@ public class App
 	/*test case for Piano Tiles : http://www.pianotiles.org/*/
     public static void main( String[] args ) throws FindFailed, InterruptedException
     {
-		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","chromedriver");
         WebDriver driver = new ChromeDriver();  
         driver.get("http://www.pianotiles.org/");
         
