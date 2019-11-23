@@ -41,7 +41,11 @@ public class App
 	        		reg.click("src/imgs/a.png", 0);
         	}
         }
-        catch(FindFailed e){e.printStackTrace();}
+        catch(FindFailed e)
+        {
+        	e.printStackTrace();
+        	driver.quit();
+        }
         driver.quit();
     }
 }
