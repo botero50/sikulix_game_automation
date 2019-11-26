@@ -1,7 +1,0 @@
-** INSTALL
-	1. Download the code
-	2. Update the driver
-	3. Open terminal and type chmod +x geckodriver
-	4. Import the code as maven project
-	5. Run the project
-	
