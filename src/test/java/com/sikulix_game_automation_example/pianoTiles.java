@@ -1,14 +1,7 @@
 package com.sikulix_game_automation_example;
 
-import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.script.FindFailed;
-import org.sikuli.script.Match;
-import org.sikuli.script.Region;
-import org.sikuli.script.Screen;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.sikuli.script.FindFailed;
